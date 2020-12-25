@@ -2,7 +2,19 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	if(x<='@'){
+		return '0';
+	}
+	if(x>'Z'){
+		return '0';
+	}
+	if(x=='A'){
+		return 'Z';
+	}
+	else{
+	 x=x-1;
+	 return x;
+	}
 }
 
 int main(){
